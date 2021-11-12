@@ -56,7 +56,7 @@ class Api::V1::UsersControllerTest < ActionDispatch::IntegrationTest
             }
           },
           as: :json
-    assert_response :unprocessable_entity
+    assert_response :forbidden
   end
 
   test "should destroy user" do
